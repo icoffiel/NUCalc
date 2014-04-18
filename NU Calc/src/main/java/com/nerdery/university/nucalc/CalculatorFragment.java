@@ -227,7 +227,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                 inputString += "-";
                 break;
             case R.id.buttonMultiply:
-                inputString += "x";
+                inputString += "*";
                 break;
             case R.id.buttonDivide:
                 inputString += "/";
