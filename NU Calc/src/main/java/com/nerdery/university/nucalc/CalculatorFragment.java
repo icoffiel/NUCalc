@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.nerdery.university.nucalc.service.SharedPreferenceService;
+
 import net.sourceforge.jeval.EvaluationException;
 import net.sourceforge.jeval.Evaluator;
 
@@ -30,6 +32,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String KEY_INPUT_STRING = "keyInputString";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -82,9 +85,20 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     }
 
     @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        Log.d(TAG, "The onActivityCreated method");
+        super.onActivityCreated(savedInstanceState);
+
+        if( getActivity() != null ) {
+            SharedPreferenceService prefs = new SharedPreferenceService(getActivity());
+            inputString = prefs.getString(KEY_INPUT_STRING, "");
+        }
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate() method");
+        Log.d(TAG, "The onCreate() method");
 
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -95,7 +109,8 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.d(TAG, "onCreateView() method");
+        Log.d(TAG, "The onCreateView() method");
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_calculator, container, false);
 
@@ -164,6 +179,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onAttach(Activity activity) {
+        Log.d(TAG, "The onAttach() method");
         super.onAttach(activity);
         try {
             mListener = (OnFragmentInteractionListener) activity;
@@ -175,8 +191,25 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onDetach() {
+        Log.d(TAG, "The onDetach() method");
         super.onDetach();
         mListener = null;
+    }
+
+    /**
+     * Save the fragment state
+     *
+     * @param outState The out state bundle
+     */
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        Log.d(TAG, "The onSaveInstanceState(Bundle)");
+        super.onSaveInstanceState(outState);
+
+        if( getActivity() != null ) {
+            SharedPreferenceService prefs = new SharedPreferenceService(getActivity());
+            prefs.saveString(KEY_INPUT_STRING, inputString);
+        }
     }
 
     /**
@@ -186,6 +219,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
      */
     @Override
     public void onClick(final View view) {
+        Log.d(TAG, "The onClick() method called with view id [" + view.getId() + "]");
         switch(view.getId()) {
             case R.id.buttonOne:
                 inputString += "1";
@@ -240,7 +274,6 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                 } catch (EvaluationException e) {
                     e.printStackTrace();
                 }
-                inputString = "";
         }
 
         txtInput.setText(inputString);
