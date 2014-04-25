@@ -7,9 +7,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends ActionBarActivity implements CalculatorFragment.OnFragmentInteractionListener {
+public class MainActivity
+        extends ActionBarActivity
+        implements CalculatorFragment.OnFragmentInteractionListener, LogFragment.OnFragmentInteractionListener {
 
     private static final String TAG = "MainActivity";
+    private String log = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +42,15 @@ public class MainActivity extends ActionBarActivity implements CalculatorFragmen
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+
+        switch( item.getItemId() ) {
+            case R.id.action_settings:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, LogFragment.newInstance(log))
+                        .addToBackStack(null)
+                        .commit();
+            default: return super.onOptionsItemSelected(item);
+        }
     }
 
     /** Called when the activity is about to become visible. */
@@ -79,7 +89,18 @@ public class MainActivity extends ActionBarActivity implements CalculatorFragmen
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri) {
+    public void onCalculatorFragmentInteraction(String logString) {
+        Log.d(TAG, "The onCalculatorFragmentInteraction method");
+
+        if("".equals(log)) {
+            log += logString;
+        } else {
+            log += "\n" + logString;
+        }
+    }
+
+    @Override
+    public void onLogFragmentInteraction(Uri uri) {
 
     }
 }

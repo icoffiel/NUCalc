@@ -1,7 +1,6 @@
 package com.nerdery.university.nucalc;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -32,6 +31,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
     private static final String KEY_INPUT_STRING = "keyInputString";
 
     // TODO: Rename and change types of parameters
@@ -171,9 +171,9 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void logAction(String logString) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onCalculatorFragmentInteraction(logString);
         }
     }
 
@@ -269,11 +269,17 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
             case R.id.buttonEquals:
                 // Evaluate the string and place the result in output
                 Evaluator evaluator = new Evaluator();
+                String output;
                 try {
-                    txtOutput.setText(evaluator.evaluate(inputString));
+                    output = evaluator.evaluate(inputString);
                 } catch (EvaluationException e) {
                     e.printStackTrace();
+                    output = "Error!";
                 }
+
+                //Update the output string and log the action that was taken
+                txtOutput.setText(output);
+                logAction(inputString + " = " + output);
         }
 
         txtInput.setText(inputString);
@@ -291,7 +297,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        public void onCalculatorFragmentInteraction(String logString);
     }
 
 }

@@ -35,9 +35,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Activities" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8c7cab-656c-47b1-b112-32a25a16a923" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/service/SharedPreferenceService.java" />
+    <list default="true" id="ec8c7cab-656c-47b1-b112-32a25a16a923" name="Default" comment="New LogFragment.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/LogFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_log.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java" afterPath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java" afterPath="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NU Calc.iws" />
@@ -105,7 +108,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="16" selection-start="2380" selection-end="2380" vertical-scroll-proportion="-19.538462" vertical-offset="869" max-vertical-offset="1547">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1904">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,23 +116,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/menu/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="17" selection-start="9089" selection-end="9089" vertical-scroll-proportion="0.6396648" vertical-offset="4208" max-vertical-offset="4913">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SharedPreferenceService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/service/SharedPreferenceService.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="20" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2584">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="5" column="38" selection-start="188" selection-end="188" vertical-scroll-proportion="0.20581114" vertical-offset="0" max-vertical-offset="510">
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_calculator.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_calculator.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="43" selection-start="3811" selection-end="3811" vertical-scroll-proportion="-71.64" vertical-offset="62" max-vertical-offset="3451">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/LogFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="52" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="1955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatorFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="1575" selection-end="1575" vertical-scroll-proportion="-5.890909" vertical-offset="237" max-vertical-offset="5032">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_log.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_log.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="32" selection-start="403" selection-end="403" vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -515,12 +570,14 @@
       <list>
         <option value="$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_main.xml" />
         <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/fragment/CalculatorFragment.java" />
-        <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java" />
         <option value="$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_calculator.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/service/SharedPreferenceService.java" />
+        <option value="$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_log.xml" />
+        <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/LogFragment.java" />
+        <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java" />
         <option value="$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java" />
+        <option value="$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -668,6 +725,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NU Calc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NUCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NU Calc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NU Calc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NUCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NU Calc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1017,7 +1134,11 @@
       <created>1397786806855</created>
       <updated>1397786806855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Saving of state.">
+      <created>1398398198889</created>
+      <updated>1398398198889</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1027,6 +1148,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1171,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1069,7 +1190,8 @@
     <MESSAGE value="Initial UI commit.&#10;" />
     <MESSAGE value="Addition of all button handlers.&#10;Use of eval library for string math parser." />
     <MESSAGE value="Changed multiply from x to * for use within jeval." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed multiply from x to * for use within jeval." />
+    <MESSAGE value="Saving of state." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving of state." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1300,26 +1422,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="401">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="38" selection-start="0" selection-end="6803" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="3451">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/net/Uri.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.19953051" vertical-offset="0" max-vertical-offset="2244" />
@@ -1365,36 +1467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_calculator.xml">
-      <provider editor-type-id="text-editor">
-        <state line="109" column="43" selection-start="3811" selection-end="3811" vertical-scroll-proportion="0.0" vertical-offset="1724" max-vertical-offset="3451">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/content/SharedPreferences.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.12073863" vertical-offset="0" max-vertical-offset="1003">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/service/SharedPreferenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="20" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2584">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1405,18 +1481,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="16" selection-start="2380" selection-end="2380" vertical-scroll-proportion="-19.538462" vertical-offset="869" max-vertical-offset="1547">
+        <state line="16" column="39" selection-start="567" selection-end="567" vertical-scroll-proportion="0.37628865" vertical-offset="126" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/service/SharedPreferenceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="20" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2584">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="401">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_log.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="403" selection-end="403" vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/layout/fragment_calculator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="43" selection-start="3811" selection-end="3811" vertical-scroll-proportion="-71.64" vertical-offset="62" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar!/android/support/v4/app/Fragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="16" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.35466668" vertical-offset="1210" max-vertical-offset="4607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/LogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="52" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="1955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/CalculatorFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="17" selection-start="9089" selection-end="9089" vertical-scroll-proportion="0.6396648" vertical-offset="4208" max-vertical-offset="4913">
+        <state line="47" column="0" selection-start="1575" selection-end="1575" vertical-scroll-proportion="-5.890909" vertical-offset="237" max-vertical-offset="5032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/java/com/nerdery/university/nucalc/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1904">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NU Calc/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="38" selection-start="188" selection-end="188" vertical-scroll-proportion="0.20581114" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
